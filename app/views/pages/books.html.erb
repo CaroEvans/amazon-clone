@@ -1,0 +1,9 @@
+<h1>Books</h1>
+<% @books.each do |book| %>
+  <h3><%= book.title %></h3>
+  <h4><%= book.author.name %></h4>
+  <img style="width:100px" src="<%= book.img %>">
+  <h4>user rating: <%= book.rating %>/5</h4>
+  <hr>
+
+<% end %>
