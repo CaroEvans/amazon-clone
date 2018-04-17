@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  root to: 'pages/books#index'
-  get 'pages/books'
-  get 'pages/authors'
+
+  resources :stores
+  resources :books
+  resources :authors
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
